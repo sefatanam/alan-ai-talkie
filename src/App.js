@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import alanBtn from "@alan-ai/alan-sdk-web";
 import NewsCards from "./components/NewsCards/NewsCards";
 import useStyles from "./style.js";
-import { Typography } from "@material-ui/core";
 import wordsToNumbers from "words-to-number";
+import logo from "./assets/pngwing.com.png";
 
 const alanKey =
   "47da0455570dca09e71f683158abd2f42e956eca572e1d8b807a3e2338fdd0dc/stage";
@@ -42,11 +42,7 @@ const App = () => {
     <div>
       <div className={classes.logoContainer}>
         {/* <Typography variant="h5">Your Personal News Reader</Typography> */}
-        <img
-          src="https://news.talkie.ai/wp-content/uploads/2018/12/1obszar-roboczy-1.svg"
-          className={classes.alanLogo}
-          alt="Takie News Logo"
-        />
+        <img src={logo} className={classes.alanLogo} alt="Takie News Logo" />
       </div>
 
       <NewsCards articles={newsArticles} activeArticle={activeArticle} />

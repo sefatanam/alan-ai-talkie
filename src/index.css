@@ -1,14 +1,17 @@
 #root,
 html,
 body {
-  height: 100vh;
+  margin: 0;
+  /* background: url("https://images.wallpapersden.com/image/download/new-york-city-street-photography_60649_3840x2160.jpg"); */
+  background-size: cover;
 }
 
 body {
-  margin: 0;
-  background-color: whitesmoke;
+  background: url("https://images.wallpapersden.com/image/download/new-york-city-street-photography_60649_3840x2160.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-origin: border-box;
 }
-
 * {
   box-sizing: border-box;
 }

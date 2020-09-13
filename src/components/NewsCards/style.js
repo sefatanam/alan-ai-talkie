@@ -16,6 +16,11 @@ export default makeStyles({
     padding: "10%",
     borderRadius: 10,
     color: "white",
+    opacity: 0.7,
+
+    "&:hover": {
+      color: "white",
+    },
   },
   infoCard: {
     display: "flex",
